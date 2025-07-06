@@ -1,12 +1,15 @@
 const express = require('express');
-const path = require('path');  // <-- require path module
-const myapp = express();
-const port = 9000;
+const app = express();
 
-myapp.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+// 🔥 Use the correct port
+const PORT = process.env.PORT || 3000;
+
+app.use(express.static('public'));
+
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/public/index.html');
 });
 
-myapp.listen(port, () => {
-  console.log("miaw you started a project xD");
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
 });
