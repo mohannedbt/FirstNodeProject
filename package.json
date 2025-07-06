@@ -9,5 +9,16 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohannedbt/FirstNodeProject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mohannedbt/FirstNodeProject/issues"
+  },
+  "homepage": "https://github.com/mohannedbt/FirstNodeProject#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
